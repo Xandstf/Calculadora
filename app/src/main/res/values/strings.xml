@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="menos">-</string>
+    <string name="mais">+</string>
+    <string name="multi">*</string>
+    <string name="divide">/</string>
+    <string name="igual">=</string>
+    <string name="c">C</string>
+    <string name="modulo">%</string>
+    <string name="ponto">.</string>
+    <string name="back">←</string>
+    <string name="configuraces">Configurações</string>
+    <string name="sair">Sair</string>
+    <string name="siteIFSP">Site IFSP</string>
+    <string name="siteGoogle">Google</string>
+    <string name="ligarIfsp">Chamar</string>
+    <string name="tipo_da_calculadora">Opções Calculadora</string>
+    <string name="avancada">Avançada</string>
+    <string name="basica">Básica</string>
+    <string name="salvar_mudancas">Salvar mudanças</string>
+    <string name="exponencial">ex</string>
+    <string name="raiz">2√x</string>
+</resources>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/visor_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#C4CDFA"
+        android:padding="2dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultado_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#C4CDFA"
+        android:padding="7dp"
+        android:text="@string/_0"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/limpar_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/c" />
+
+            <Button
+                android:id="@+id/backspace_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <Button
+                android:id="@+id/modulo_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/modulo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/raizquadrada_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/raiz"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/potencia_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/exponencial"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sete_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/oito_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+
+            <Button
+                android:id="@+id/nove_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/mais_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/mais"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/quatro_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/cinco_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/seis_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/menos_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/menos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/um_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/dois_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/tres_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:id="@+id/multi_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/multi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/zero_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick"
+                android:text="@string/_0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                />
+
+
+            <Button
+                android:id="@+id/ponto_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/ponto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <Button
+                android:id="@+id/igual_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/igual"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <Button
+                android:id="@+id/divide_bt"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:onClick="onClick"
+                android:text="@string/divide"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>
